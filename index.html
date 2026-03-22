@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Report - Originova</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a73e8, #6a11cb);
+    color: #333;
+}
+
+/* Floating background */
+.circle {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    animation: float 6s infinite ease-in-out;
+}
+
+.circle:nth-child(1) { top: 10%; left: 5%; }
+.circle:nth-child(2) { top: 70%; left: 80%; }
+.circle:nth-child(3) { top: 40%; left: 60%; }
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #1a73e8;
+    font-size: 32px;
+}
+
+.team {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Titles */
+h2 {
+    margin-bottom: 10px;
+    border-left: 5px solid #1a73e8;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+h2:hover {
+    color: #1a73e8;
+    transform: translateX(5px);
+}
+
+h3 {
+    margin-top: 10px;
+    color: #444;
+}
+
+/* List */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: gray;
+}
+
+/* 🔥 Responsive for tablets */
+@media (min-width: 600px) {
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 🔥 Responsive for laptops */
+@media (min-width: 900px) {
+    .header h1 {
+        font-size: 42px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🚀 SEO Report</h1>
+        <div class="team">Team Originova</div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>SEO is the process of improving a website to rank higher in search engines.</p>
+        </div>
+
+        <div class="card">
+            <h2>Importance</h2>
+            <ul>
+                <li>Increase visibility</li>
+                <li>More traffic</li>
+                <li>Better UX</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>On-Page SEO</h2>
+            <p>Optimizing content, titles, and keywords inside the website.</p>
+        </div>
+
+        <div class="card">
+            <h2>Off-Page SEO</h2>
+            <p>Backlinks and external signals.</p>
+        </div>
+
+        <div class="card">
+            <h2>Technical SEO</h2>
+            <p>Speed, mobile-friendly, and secure site.</p>
+        </div>
+
+        <div class="card">
+            <h2>Search Engines</h2>
+            <p>They crawl, index, and rank content.</p>
+        </div>
+
+        <div class="card">
+            <h2>Conclusion</h2>
+            <p>SEO helps websites grow and reach more users.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        🔥 Made by Team Originova
+    </div>
+
+</div>
+
+</body>
+</html>
